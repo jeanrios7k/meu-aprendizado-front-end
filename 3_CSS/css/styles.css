@@ -1,0 +1,487 @@
+/* 4. External */
+body {
+    padding-bottom: 500px;
+}
+
+h3 {
+    color: purple;
+}
+
+p {
+    color: aqua;
+}
+
+/* Algum comentario */
+
+/* 8. Classes */
+
+.paragraph {
+    color: purple;
+    background-color: aqua;
+}
+
+/* 9. ID */
+
+#exclusive-title {
+    background-color: purple;
+    color: yellow;
+    padding: 15px;
+    font-size: 50px;
+}
+
+/* 10. Ordem das regras */
+
+h2 {
+    border-bottom: 2px solid rgb(214, 36, 36);
+}
+
+.titulo {
+    border-bottom: 2px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 4px solid red;
+}
+
+/* 11. Centralizar bg image */
+
+.not-centered-bg,
+.centered-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url("../img/city.jpg");
+}
+
+.centered-bg {
+    background-position: center;
+    background-size: cover;
+}
+
+/* 12. Height e Width */
+
+.height-width {
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+.height-width-2 {
+    height: 300px;
+    background-color: gray;
+}
+
+/* 13. padding */
+
+.without-padding,
+.padding {
+    background-color: #111;
+    color: #fff;
+}
+
+.padding {
+    background-color: aqua;
+    padding: 20px;
+}
+
+/* 14. padding individual */
+
+.padding-individual {
+    background-color: #111;
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+/* 15. shorthand padding */
+
+.shorthand-padding {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px 35px 5px;
+}
+
+.shorthand-padding-2 {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.shorthand-padding-3 {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+}
+
+/* 16. padding com width */
+
+.without-border-box {
+    background-color: #111;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box {
+    background-color: #111;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* 17. border */
+
+.border {
+    border: 10px solid #956798;
+    padding: 20px;
+}
+
+.border-2 {
+    border: 5px dotted #119845;
+    padding: 50px;
+}
+
+/* 18. Border individual */
+
+.border-left {
+    border-left: 10px solid green;
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+}
+
+.border-bottom {
+    border-bottom: 10px solid green;
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+}
+
+.border-top {
+    border-top: 10px solid blue;
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+}
+
+/* 19. Border redonda */
+
+.rounded-p {
+    border: 5px solid yellow;
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.rounded-p-2 {
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* 20. margin */
+
+.margin {
+    background-color: #111;
+    margin: 15px;
+    padding: 10px;
+}
+
+.margin-top {
+    background-color: #111;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.shorthand-margin {
+    background-color: #111;
+    margin: 10px 30px 50px 5px;
+    padding: 10px;
+}
+
+/* 21. box model */
+
+.box-model {
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    border: 3px solid #657825;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin: 40px;
+}
+
+/* 22. Desafio 3 */
+
+#desafio {
+    background-color: #657825;
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+    border: 4px solid #119845;
+    border-radius: 2px;
+    margin: 10px;
+    box-sizing: border-box;
+    outline: 4px solid #111;
+}
+
+.desafio-3 {
+    background-color: #111;
+    color: #fff;
+    border: none;
+}
+
+/* 23. Text alignment */
+
+.text-aligned {
+    color: #111;
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    border: 2px solid #111;
+    width: 500px;
+}
+
+/* 24. Text Decoration */
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.without-underline {
+    text-decoration: none;
+}
+
+/* 25. Text Transform */
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* 26. Letter spacing */
+
+.spacing {
+    letter-spacing: 20px;
+}
+
+/* 27. Fonts */
+
+.serif,
+.sans-serif,
+.monospace,
+.cursive,
+.fantasy {
+    color: #111;
+}
+
+.serif {
+    font-family: serif;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+/* 28. Font Style */
+
+.italic,
+.oblique {
+    color: #111;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* 29. Font weight */
+
+.thin,
+.bold,
+.bolder {
+    color: #111;
+    font-family: sans-serif;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+/* 30. font size */
+
+.small {
+    font-size: 10px;
+}
+
+.big {
+    font-size: 60px;
+}
+
+/* 31. Display */
+
+.inline-box {
+    width: 100px;
+    height: 100px;
+    background-color: #111;
+    display: inline-block;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    background-color: #657825;
+    margin: 5px;
+    display: block;
+}
+
+/* 32. Esconder elemento */
+
+.invisible {
+    display: none;
+}
+
+/* 33. Positions */
+
+.static {
+    position: static;
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+}
+
+.relative {
+    position: relative;
+    background-color: #119845;
+    width: 100px;
+    height: 100px;
+    left: 40px;
+    top: 75px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: #956798;
+    width: 100px;
+    height: 100px;
+    top: 3px;
+    right: 3px;
+}
+
+/* 34. Relative com absolute */
+
+.relative-container {
+    width: 300px;
+    height: 300px;
+    border: 5px solid red;
+    margin: 150px;
+    position: relative;
+}
+
+.absolute-1,
+.absolute-2 {
+    height: 50px;
+    width: 50px;
+    background-color: #119845;
+    position: absolute;
+}
+
+.absolute-1 {
+    top: 5px;
+    left: 5px;
+}
+
+.absolute-2 {
+    bottom: 5px;
+    right: 5px;
+}
+
+/* 35. Position fixed e sticky */
+
+.fixed {
+    width: 50px;
+    height: 50px;
+    background-color: #119845;
+    color: white;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+
+.sticky {
+    width: 50px;
+    height: 50px;
+    background-color: #119845;
+    color: white;
+    position: sticky;
+    bottom: 5px;
+}
+
+/* 36. Z-index */
+
+.absolute-3,
+.absolute-4,
+.absolute-5 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+.absolute-3 {
+    top: 0;
+    left: 0;
+    background-color: #119845;
+    z-index: 3;
+}
+
+.absolute-4 {
+    top: 20px;
+    left: 20px;
+    background-color: aqua;
+    z-index: 2;
+}
+
+.absolute-5 {
+    top: 40px;
+    left: 40px;
+    background-color: #956798;
+    z-index: 1;
+}
+
+/* Concluido */
