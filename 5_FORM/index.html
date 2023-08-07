@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios em HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Formulario</h2>
+    <!-- 1. Primeiro formulario -->
+    <!-- 2. Atributos do formularios -->
+    <form action="register.php" method="GET">
+        <div>
+            <label>Nome:</label>
+            <input type="text" />
+        </div>
+    <!-- 3. Atributo name e label -->
+        <div>
+            <label for="age">Idade:</label>
+            <input type="text" name="age">
+        </div>
+    <!-- 4. Selecionar -->
+        <div>
+            <label for="job">Selecione sua profissao:</label>
+            <select name="job">
+                <option value=""></option>
+                <option value="programador">Programador</option>
+                <option value="engenheiro">Engenheiro</option>
+                <option value="mecanico">Mecanico</option>
+            </select>
+        </div>
+    <!-- 5. Enviar  -->
+        <input type="submit" value="Enviar">
+
+    <!-- 6. Atributo Selected -->
+        <div>
+            <label for="contract">Voçê leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+        </div>
+    <!-- 7. Multiplas opções -->
+        <div>
+            <label for="items">Selecio os itens desejados:</label>
+            <select name="items" multiple>
+                <option value="maca">Maça</option>
+                <option value="uva">Uva</option>
+                <option value="abacaxi">Abacaxi</option>
+                <option value="laranja">Laranja</option>
+            </select>
+        </div>
+    <!-- 8. Textarea -->
+        <div>
+            <label for="comment">Escreva aqui o seu comentario</label>
+            <textarea name="comment"></textarea>
+        </div>
+    <!-- 9. Fildset e legend -->
+        <div>
+            <fieldset>
+                <legend>Informações pessoais:</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+    <!-- 10. Datalist -->
+        <div>
+            <label for="flavors">Escolha um sabor</label>
+            <input type="text" list="flavors" name="flavors">
+
+            <datalist id="flavors">
+                <option value=" ">Morango</option>
+                <option value=" ">Banana</option>
+                <option value=" ">Leite</option>
+                <option value=" ">Chocolate</option>
+                <option value=" ">Limão</option>
+            </datalist>
+        </div>
+    <!-- 11. password -->
+        <div>
+            <label for="password">Digite sua senha:</label>
+            <input type="password" name="password">
+        </div>
+
+    <!-- 12. reset -->
+        <div>
+            <input type="reset" name="reset" value="Limpar">
+        </div>
+
+    <!-- 13. radio button -->
+        <div>
+            <label for="car-model">Escolha seu carro preferido:</label>
+            <div class="radio">
+                <input type="radio" value="bmw" name="car-model">
+                <label for="bmw">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="ferrari" name="car-model">
+                <label for="ferrari">Ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="fiat" name="car-model">
+                <label for="fiat">Fiat</label>
+            </div>
+        </div>
+    <!-- 14. checkbox -->
+        <div>
+            <label for="optinals">Opcionais do carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optinals[]" value="big-tires">
+                <label for="big-tires">Pneus Grandes</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optinals[]" value="engine">
+                <label for="engine">Turbo</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optinals[]" value="hybrid">
+                <label for="hybrid">Híbrido</label>
+            </div>
+        </div>
+    <!-- 15. datas -->
+        <div>
+            <label for="date">Data de nascimento:</label>
+            <input type="date" name="date">
+        </div>
+
+    <!-- 16. arquivos -->
+        <div>
+            <label for="image">Insira sua imagem:</label>
+            <input type="file" name="image">
+        </div>
+    <!-- 17. numeros -->
+        <div>
+            <label for="salary">Informe seu salario:</label>
+            <input type="number" name="salary">
+        </div>
+    <!-- 18. email -->
+        <div>
+            <label for="email">Coloque seu email:</label>
+            <input type="email" name="email">
+        </div>
+    <!-- 19. value -->
+        <div>
+            <label for="value">Este é meu valor</label>
+            <input type="text" name="value" value="Este é meu valor 2">
+        </div>
+    <!-- 20. disabled -->
+        <div>
+            <p>Tente mudar este valor:</p>
+            <input type="text" value="Não precisa preencher" disabled>
+        </div>
+    <!-- 21. placeholder -->
+        <div>
+            <label for="placeholder">Informe:</label>
+            <input type="text" name="placeholder" placeholder="Digite...">
+        </div>
+    <!-- 22. required -->
+        <div>
+            <label for="birthyear">Ano nascimento:</label>
+            <input type="text" name="placeholder" placeholder="Ano de Nascimento" required>
+         </div>
+    </form>
+</body>
+</html>
